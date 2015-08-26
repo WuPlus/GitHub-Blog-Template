@@ -1,7 +1,9 @@
 var view = {
     width: 0,
     height: 0,
-    speed: '4000',
+    speed: 1500,
+    left: 1,
+    top: 1,
     obtianWindowSize: function() {
         view.width = $(window).width();
         view.height = $(window).height();
@@ -38,17 +40,64 @@ var view = {
                 scrollLeft: 0
             }, view.speed);
         });
+
+    },
+    initializeKeyBoard: function() {
+        var container = $('#main-container');
+        $(document).on('keydown', function(e) {
+            var x = e.which || e.keyCode;
+            switch (x) {
+                //up
+                case 38:
+                    view.top = (view.top === 0 || view.left !== 1) ? view.top : view.top - 1;
+                    container.animate({
+                        scrollTop: view.top * view.height
+                    }, {
+                        duration: view.speed,
+                        easing: 'easeOutExpo'
+                    });
+                    break;
+                case 37:
+                    view.left = (view.left === 0 || view.top !== 1) ? view.left : view.left - 1;
+                    container.animate({
+                        scrollLeft: view.left * view.width
+                    }, {
+                        duration: view.speed,
+                        easing: 'easeOutExpo'
+                    });
+                    break;
+                case 40:
+                    view.top = (view.top === 2 || view.left !== 1) ? view.top : view.top + 1;
+                    container.animate({
+                        scrollTop: view.top * view.height
+                    }, {
+                        duration: view.speed,
+                        easing: 'easeOutExpo'
+                    });
+                    break;
+                case 39:
+                    view.left = (view.left === 2 || view.top !== 1) ? view.left : view.left + 1;
+                    container.animate({
+                        scrollLeft: view.left * view.width
+                    }, {
+                        duration: view.speed,
+                        easing: 'easeOutExpo'
+                    });
+                    break;
+            }
+        });
     },
     resize: function() {
-		$(window).resize(function(){
-			view.obtianWindowSize();
-			view.initializeDiv();
-		});
+        $(window).resize(function() {
+            view.obtianWindowSize();
+            view.initializeDiv();
+        });
     },
     initialize: function() {
         view.obtianWindowSize();
         view.initializeDiv();
         view.initializeNavButtons();
+        view.initializeKeyBoard();
         view.resize();
     }
 };

@@ -6,28 +6,24 @@
 		<div class="container" id="main-container">
 			<div class="row">
 				<div class="col"></div>
-				<div class="col green">
+				<div class="col bg-yellow">
 					{% include blog.html %}
 				</div>
 				<div class="col"></div>
 			</div>
 			<div class="row">
-				<div class="col red">
+				<div class="col bg-light-pink">
 					{% include contact.html %}
 				</div>
-				<div class="col blue">
-					<button id='top-button'>top</button>
-					<button id='left-button'>left</button>
-					<button id='right-button'>right</button>
-					<button id='bottom-button'>buttom</button>
+				<div class="col bg-dark-black">
 				</div>
-				<div class="col yellow">
+				<div class="col bg-dark-blue">
 					{% include about.html %}
 				</div>
 			</div>
 			<div class="row">
 				<div class="col"></div>
-				<div class="col black">
+				<div class="col bg-green">
 					{% include portfolio.html %}
 				</div>
 				<div class="col"></div>
@@ -35,6 +31,7 @@
 		</div>
 	</body>
 	<script type="text/javascript" src="/js/lib/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/lib/jquery.easing.1.3.js"></script>
 	<script type="text/javascript" src="/js/layout.js"></script>
 	<script>
 		$(function(){
