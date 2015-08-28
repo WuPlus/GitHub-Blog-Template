@@ -39,11 +39,19 @@ html,body {
 }
 
 .shadow-up {
-	box-shadow: 7px 7px 7px;
+	box-shadow: 7px -7px 7px;
 }
 
 .shadow-down {
 	box-shadow: 7px 7px 7px;
+}
+
+.shadow-left-down {
+	box-shadow: -7px 7px 7px;
+}
+
+.shadow-left-up {
+	box-shadow: -7px -7px 7px;
 }
 
 /*component*/
@@ -61,7 +69,7 @@ html,body {
 }
 
 .card-list {
-	perspective: 800px;
+	perspective: 400px;
 }
 
 .card {
@@ -72,19 +80,30 @@ html,body {
 	border: solid white 4px;
 	border-radius: 10px;
 	margin: 30px;
-	box-shadow: #962f59;
-	transition: 1s;
+	color: #962f59;
 	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-tranform-style: preserve-3d;
 	-ms-transform:rotate(45deg);
 	-moz-transform:rotate(45deg); 
 	-webkit-transform:rotate(45deg);
 	-o-transform:rotate(45deg);
 	transform:rotate(45deg);
+
+
 }
 
-.card:hover {
+.card:hover{
 	box-shadow: none;
 	margin-top: 32px;
+}
+
+.card.flip {
+	transition: transform 2s;
+	-webkit-transition: -webkit-transform 2s;
+	-moz-transition: -moz-transform 2s;
+	-o-transition: -o-transform 2s;
 	-ms-transform:rotateY(180deg) rotate(45deg);
 	-moz-transform:rotateY(180deg) rotate(45deg); 
 	-webkit-transform:rotateY(180deg) rotate(45deg);
@@ -100,17 +119,12 @@ html,body {
 	height: 100%;
 }
 
-.card .card-front {
-	background: red;
-}
-
 .card .card-back {
-	background: green;
-	-ms-transform:rotateY(180deg);
-	-moz-transform:rotateY(180deg); 
-	-webkit-transform:rotateY(180deg);
-	-o-transform:rotateY(180deg);
-	transform: rotateY( 180deg );
+	-ms-transform:rotateY(180deg) rotate(90deg);
+	-moz-transform:rotateY(180deg) rotate(90deg); 
+	-webkit-transform:rotateY(180deg) rotate(90deg);
+	-o-transform:rotateY(180deg) rotate(90deg);
+	transform: rotateY( 180deg ) rotate(90deg);
 }
 
 

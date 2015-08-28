@@ -39,11 +39,14 @@ var view = {
             container.animate({
                 scrollLeft: 0
             }, view.speed);
+            card.addClass('flip');
         });
 
     },
     initializeKeyBoard: function() {
         var container = $('#main-container');
+        var card = $('.card');
+
         $(document).on('keydown', function(e) {
             var x = e.which || e.keyCode;
             switch (x) {
@@ -65,6 +68,9 @@ var view = {
                         duration: view.speed,
                         easing: 'easeOutExpo'
                     });
+                    if (!card.hasClass('flip')) {
+                        card.addClass('flip');
+                    }
                     break;
                 case 40:
                     view.top = (view.top === 2 || view.left !== 1) ? view.top : view.top + 1;
@@ -83,6 +89,9 @@ var view = {
                         duration: view.speed,
                         easing: 'easeOutExpo'
                     });
+                    if (card.hasClass('flip')) {
+                        card.removeClass('flip');
+                    }
                     break;
             }
         });
