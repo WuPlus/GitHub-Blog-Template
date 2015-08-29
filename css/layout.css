@@ -90,8 +90,6 @@ html,body {
 	-webkit-transform:rotate(45deg);
 	-o-transform:rotate(45deg);
 	transform:rotate(45deg);
-
-
 }
 
 .card:hover{
@@ -99,7 +97,7 @@ html,body {
 	margin-top: 32px;
 }
 
-.card.flip {
+.flip {
 	transition: transform 2s;
 	-webkit-transition: -webkit-transform 2s;
 	-moz-transition: -moz-transform 2s;
@@ -109,6 +107,41 @@ html,body {
 	-webkit-transform:rotateY(180deg) rotate(45deg);
 	-o-transform:rotateY(180deg) rotate(45deg);
 	transform: rotateY(180deg) rotate(45deg);
+}
+
+.card1 {
+	-webkit-transition-delay: 0s;
+	-moz-transition-delay: 0s;
+	-o-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+.card2 {
+	-webkit-transition-delay: 0.2s;
+	-moz-transition-delay: 0.2s;
+	-o-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+
+.card3 {
+	-webkit-transition-delay: 0.4s;
+	-moz-transition-delay: 0.4s;
+	-o-transition-delay: 0.4s;
+	transition-delay: 0.4s;
+}
+
+.card4 {
+	-webkit-transition-delay: 0.6s;
+	-moz-transition-delay: 0.6s;
+	-o-transition-delay: 0.6s;
+	transition-delay: 0.6s;
+}
+
+.card5 {
+	-webkit-transition-delay: 0.8s;
+	-moz-transition-delay: 0.8s;
+	-o-transition-delay: 0.8s;
+	transition-delay: 0.8s;
 }
 
 .card .card-front, .card .card-back {

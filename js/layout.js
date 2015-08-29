@@ -66,11 +66,13 @@ var view = {
                         scrollLeft: view.left * view.width
                     }, {
                         duration: view.speed,
-                        easing: 'easeOutExpo'
+                        easing: 'easeOutExpo',
+                        complete: function() {
+                            if (!card.hasClass('flip')) {
+                                card.addClass('flip');
+                            }
+                        },
                     });
-                    if (!card.hasClass('flip')) {
-                        card.addClass('flip');
-                    }
                     break;
                 case 40:
                     view.top = (view.top === 2 || view.left !== 1) ? view.top : view.top + 1;
@@ -87,11 +89,13 @@ var view = {
                         scrollLeft: view.left * view.width
                     }, {
                         duration: view.speed,
-                        easing: 'easeOutExpo'
+                        easing: 'easeOutExpo',
+                        complete: function() {
+                            if (card.hasClass('flip')) {
+                                card.removeClass('flip');
+                            }
+                        }
                     });
-                    if (card.hasClass('flip')) {
-                        card.removeClass('flip');
-                    }
                     break;
             }
         });
