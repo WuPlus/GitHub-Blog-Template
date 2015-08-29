@@ -92,7 +92,7 @@ figure.test img{
 	backface-visibility: hidden;
 	}
 figure.test:hover img {
-	opacity: 0.4;
+	opacity: 0.3;
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
