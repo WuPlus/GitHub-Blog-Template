@@ -1,3 +1,5 @@
+.blog-page
+
 .blog-title {
 	color: black;
 }
@@ -9,6 +11,8 @@
 }
 
 .single-post {
-	margin: 20px 40px 20px 40px;
-	width: 100%;
+	margin: 40px 5% 40px 5%;
+	width: 90%;
+	background-color: red;
+	height: 180px;
 }
