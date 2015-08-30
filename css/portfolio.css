@@ -1,28 +1,26 @@
 /* CSS Document */
 .portfolio-content {
-	margin: 100px 7% 0;
+	width:95%;
+	margin:0 auto;
 }
 /*common style*/
-.grid {
-	list-style: outside none none;
+.col-1-4 {
     margin: 0 auto;
-    max-width: 1300px;
-    padding: 20px 0px 100px;
-    position: relative;
-    text-align: center;
-    top: -20px;
-	}
-.grid figure{
-	position:relative;
+    width:25%;
 	float:left;
+    text-align: center;
+	}
+.effect{
+	position:relative;
 	width: 280px;
 	height: 210px;
 	overflow:hidden;
-	margin:10px 1%;
+	margin-top:50px;
+	margin-bottom:20px;
 	text-align:center;
 	cursor:pointer;
 	}
-.grid figure figcaption{
+.effect figcaption{
 	color:#fff;
 	padding:0.5em 1.5em;
 	text-transform: uppercase;
@@ -30,19 +28,19 @@
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	}
-.grid figure img{
+.effect img{
 	position: relative;
 	display: block;
 	min-height: 100%;
 	max-width: 100%;
 	opacity: 0.8;
 	}
-.grid figure figcaption::before,
-.grid figure figcaption::after {
+.effect figcaption::before,
+.effect figcaption::after {
 	pointer-events: none;
 }
-.grid figure figcaption,
-.grid figure figcaption > a {
+.effect figcaption,
+.effect figcaption > a {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -52,7 +50,7 @@
 
 /* Anchor will cover the whole item by default */
 /* For some effects it will show as a button */
-.grid figure figcaption > a {
+.effect figcaption > a {
 	z-index: 1000;
 	text-indent: 200%;
 	white-space: nowrap;
@@ -60,18 +58,18 @@
 	opacity: 0;
 }
 
-.grid figure h2 {
+.effect h2 {
 	word-spacing: -0.15em;
 	letter-spacing:1.5px;
 	font-weight: 500;
 }
 
-.grid figure h2,
-.grid figure p {
+.effect h2,
+.effect p {
 	margin: 0;
 }
 
-.grid figure p {
+.effect p {
 	letter-spacing: 1px;
 	font-size: 68.5%;
 }
