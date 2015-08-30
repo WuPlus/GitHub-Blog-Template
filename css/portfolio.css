@@ -39,7 +39,6 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 90%;
 	height: 100%;
 }
 
@@ -138,7 +137,7 @@ figure.effect_2 img{
 	width: calc(100% + 25px);
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: translate3d(-10px,0,0);
+	-webkit-transform: translate3d(-15px,0,0);
 	transform: translate3d(-15px,0,0);
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
@@ -154,9 +153,9 @@ figure.effect_2 figcaption{
 	}
 figure.effect_2 figcaption::before{
 	position:absolute;
-	top:17px;
-	bottom:100px;
-	right:80px;
+	top:20px;
+	bottom:90px;
+	right:20px;
 	left:20px;
 	border:1px solid #FFFFFF;
 	opacity:0;
@@ -171,8 +170,8 @@ figure.effect_2 p{
 	opacity:0;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
-	-webkit-transform: translate3d(-10px,0,0);
-	transform: translate3d(-10px,0,0);
+	-webkit-transform: translate3d(-20px,0,0);
+	transform: translate3d(-20px,0,0);
 	}
 figure.effect_2:hover figcaption::before,
 figure.effect_2:hover p {
@@ -204,7 +203,7 @@ figure.effect_3 figcaption::before{
 	position:absolute;
 	top:20px;
 	bottom:60px;
-	right:30px;
+	right:20px;
 	left:20px;
 	border:1px solid #FFFFFF;
 	content:'';
@@ -231,3 +230,54 @@ figure.effect_3:hover p {
 	}
 
 /*effect 4*/
+figure.effect_4{
+	background: #42b078;
+	}
+figure.effect_4:hover img{
+	opacity:0.35;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+	}
+figure.effect_4 h2{
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform:translate3d(0,10px,0);
+	transform:translate3d(0,10px,0);
+	}
+figure.effect_4:hover h2{
+	-webkit-transform:translate3d(0,0,0);
+	transform:translate3d(0,0,0);
+	}
+figure.effect_4 h2::after{
+	position:absolute;
+	content: '';
+	bottom: 0;
+	width: 100%;
+	left:0;
+	height: 3px;
+	background: #fff;
+	opacity:0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0,30px,0);
+	transform: translate3d(0,30px,0);
+	}
+figure.effect_4 p{
+	padding:60px 0;
+	opacity:0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform:translate3d(0,50%,0);
+	transform:translate3d(0,50%,0);
+	}
+figure.effect_4:hover h2{
+	-webkit-transform:translate3d(0,0,0);
+	transform:translate3d(0,0,0);
+	}
+figure.effect_4:hover h2::after, figure.effect_4:hover p{
+	opacity:1;
+	-webkit-transform:translate3d(0,0,0);
+	transform:translate3d(0,0,0);
+	}
