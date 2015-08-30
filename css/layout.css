@@ -45,6 +45,14 @@ figure {
 	text-align: center;
 }
 
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
 .shadow-up {
 	box-shadow: 7px -7px 7px;
 }
