@@ -4,6 +4,12 @@
 	margin:0 auto;
 }
 /*common style*/
+.col-1-4 {
+    margin: 0 auto;
+    width:25%;
+	float:left;
+    text-align: center;
+	}
 .effect{
 	position:relative;
 	width: 280px;
