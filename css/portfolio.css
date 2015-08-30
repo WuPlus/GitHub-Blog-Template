@@ -74,7 +74,7 @@
 	font-size: 68.5%;
 }
 
-/*effect one*/
+/*effect 1*/
 figure.effect_1{
 	background: #42b078;
 	}
@@ -133,7 +133,7 @@ figure.effect_1:hover p{
 	transform: translate3d(0,0,0);
 	}
 	
-/*effect sec*/
+/*effect 2*/
 figure.effect_2{
 	background: #42b078;
 	}
@@ -186,7 +186,7 @@ figure.effect_2:hover p {
 	transform: translate3d(0,0,0);
 	}
 	
-/*effect thr*/
+/*effect 3*/
 figure.effect_3{
 	background: #42b078;
 	}
@@ -234,3 +234,5 @@ figure.effect_3:hover p {
 	-webkit-transform: scale(1);
 	transform: scale(1);
 	}
+
+/*effect 4*/
