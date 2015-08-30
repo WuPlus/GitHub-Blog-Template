@@ -54,6 +54,10 @@ html,body {
 	box-shadow: -7px -7px 7px;
 }
 
+.clean {
+	clear: both;
+}
+
 /*component*/
 .title {
 	font-size: 60px;
@@ -184,4 +188,61 @@ a .fa-facebook {
 
 .contact-content {
 	margin: 50px 0 0 10%;
+}
+
+.left-top, .left-bottom, .right-top, .right-bottom {
+	width: 35%;
+	height: 35%;
+	float: left;
+}
+
+.right-top {
+	margin-left: 30%;
+}
+
+.right-bottom {
+	margin-left: 30%;
+}
+
+.center-bg {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	margin: auto;
+	top: 50%;
+	margin-top: -50px;
+}
+
+.center-bg-scaled {
+	transition: transform 4s ease-in-out;
+	-webkit-transition: -webkit-transform 4s ease-in-out;
+	-moz-transition: -moz-transform 4s ease-in-out;
+	-o-transition: -o-transform 4s ease-in-out;
+
+	-ms-transform:rotate(720deg) scale(10,10);
+	-moz-transform:rotate(720deg) scale(10,10); 
+	-webkit-transform:rotate(720deg) scale(10,10);
+	-o-transform:rotate(720deg) scale(10,10);
+	transform: rotate(720deg) scale(10,10);
+}
+
+.center-title {
+	opacity: 0;
+	position: relative;
+	margin-top: -100px;
+	top: 50%;
+	text-align: center;
+}
+
+.center-title-animation {
+	opacity: 1;
+	transition: opacity 2s;
+	-webkit-transition: opacity 2s;
+	-moz-transition: opacity 2s;
+	-o-transition: opacity 2s;
+
+	-webkit-transition-delay: 2s;
+	-moz-transition-delay: 2s;
+	-o-transition-delay: 2s;
+	transition-delay: 2s;
 }

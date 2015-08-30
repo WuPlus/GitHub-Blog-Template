@@ -41,7 +41,6 @@ var view = {
             }, view.speed);
             card.addClass('flip');
         });
-
     },
     initializeKeyBoard: function() {
         var container = $('#main-container');
@@ -106,9 +105,17 @@ var view = {
             view.initializeDiv();
         });
     },
+    onloadAnimation: function() {
+        var centerBg = $('.center-bg');
+        var centerTitle = $('.center-title');
+
+        centerBg.addClass('center-bg-scaled');
+        centerTitle.addClass('center-title-animation');
+    },
     initialize: function() {
         view.obtianWindowSize();
         view.initializeDiv();
+        view.onloadAnimation();
         view.initializeNavButtons();
         view.initializeKeyBoard();
         view.resize();
