@@ -1,0 +1,16 @@
+/* CSS Document */
+.about_title{
+	margin-top:65px;
+	}
+.about_head{
+	margin:30px 0;
+	}
+.pic{
+	height:120px;
+	}
+.pic img{
+	display:block;
+	height:100%;
+	width:100%;
+	}
+

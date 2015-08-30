@@ -149,8 +149,8 @@ figure.effect_2 figcaption{
 	}
 figure.effect_2 figcaption::before{
 	position:absolute;
-	top:20px;
-	bottom:90px;
+	top:10px;
+	bottom:80px;
 	right:20px;
 	left:20px;
 	border:1px solid #FFFFFF;
@@ -197,7 +197,7 @@ figure.effect_3 figcaption{
 	}
 figure.effect_3 figcaption::before{
 	position:absolute;
-	top:20px;
+	top:10px;
 	bottom:60px;
 	right:20px;
 	left:20px;
