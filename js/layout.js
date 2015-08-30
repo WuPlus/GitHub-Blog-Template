@@ -9,8 +9,8 @@ var view = {
         view.height = $(window).height();
     },
     initializeDiv: function() {
-        $('.row').css('width', 3 * view.width);
-        $('.col').css('width', view.width).css('height', view.height);
+        $('.matrix-row').css('width', 3 * view.width);
+        $('.matrix-col').css('width', view.width).css('height', view.height);
         $('.container').scrollTop(view.height).scrollLeft(view.width);
     },
     initializeNavButtons: function() {
