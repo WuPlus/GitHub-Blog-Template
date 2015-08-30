@@ -1,4 +1,6 @@
-.blog-page
+.blog-page {
+	height: 100%;
+}
 
 .blog-title {
 	color: black;

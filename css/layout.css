@@ -87,6 +87,10 @@ figure {
 	color: white;
 }
 
+.contact-title {
+	padding-top: 65px;
+}
+
 .card-list {
 	perspective: 400px;
 	margin-left: -50px;
