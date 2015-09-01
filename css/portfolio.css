@@ -37,6 +37,9 @@
 	left: 0;
 	height: 100%;
 }
+.portfolio_head{
+	padding-top:30px;
+	}
 
 /* Anchor will cover the whole item by default */
 /* For some effects it will show as a button */

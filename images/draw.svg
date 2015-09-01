@@ -1,0 +1,36 @@
+<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="-257.9 396.3 73.2 1.7" style="enable-background:new -257.9 396.3 73.2 1.7;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#143353;stroke-linecap:round;stroke-miterlimit:10;}
+<defs>
+	<style>
+		#Layer_2:hover .st0 {
+		-webkit-animation: dash 2.5s linear forwards;
+		-o-animation: dash 2.5s linear forwards;
+		-moz-animation: dash 2.5s linear forwards;
+		animation: dash 2.5s linear forwards;
+		stroke-dasharray: 100;
+		stroke-dashoffset: 0;
+		}
+		
+		@-webkit-keyframes dash{
+			from{
+				stroke-dashoffset:100;
+			}to{
+				stroke-dashoffset:0;
+			}
+		}
+		@-moz-keyframes dash{
+			from{
+				stroke-dashoffset:100;
+			}to{
+				stroke-dashoffset:0;
+			}
+		}
+	</style>
+</defs>
+</style>
+<g id="XMLID_1_">
+	<path class="st0" d="M-257,397.1c23.8,0,47.6,0,71.3,0"/>
+</g>
+</svg>

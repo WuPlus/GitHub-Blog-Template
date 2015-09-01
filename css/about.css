@@ -3,7 +3,7 @@
 	margin-top:65px;
 	}
 .about_head{
-	margin-top:30px;
+	padding-top:30px;
 	}
 .pic{
 	height:120px;
@@ -13,4 +13,5 @@
 	height:100%;
 	width:100%;
 	}
-
+.sub-title p{
+	line-height:30px;}
