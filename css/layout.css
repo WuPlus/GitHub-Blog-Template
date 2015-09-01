@@ -133,12 +133,6 @@ figure {
 	transform: rotateY(180deg) rotate(45deg);
 }
 
-.card1 {
-	-webkit-transition-delay: 0s;
-	-moz-transition-delay: 0s;
-	-o-transition-delay: 0s;
-	transition-delay: 0s;
-}
 
 .card2 {
 	-webkit-transition-delay: 0.2s;
