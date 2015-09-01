@@ -14,4 +14,12 @@
 	width:100%;
 	}
 .sub-title p{
-	line-height:30px;}
+	line-height:30px;
+	}
+.timeline{
+	text-align:left;
+	color:#FFFFFF;
+	}
+.timeline p{
+	font-weight:300;
+	}

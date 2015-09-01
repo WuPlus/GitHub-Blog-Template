@@ -1,36 +1,42 @@
 <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="-257.9 396.3 73.2 1.7" style="enable-background:new -257.9 396.3 73.2 1.7;" xml:space="preserve">
+	 viewBox="-257.5 398.3 85 18" style="enable-background:new -257.5 398.3 85 18;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#143353;stroke-linecap:round;stroke-miterlimit:10;}
-<defs>
-	<style>
-		#Layer_2:hover .st0 {
-		-webkit-animation: dash 2.5s linear forwards;
-		-o-animation: dash 2.5s linear forwards;
-		-moz-animation: dash 2.5s linear forwards;
-		animation: dash 2.5s linear forwards;
-		stroke-dasharray: 100;
-		stroke-dashoffset: 0;
-		}
-		
-		@-webkit-keyframes dash{
-			from{
-				stroke-dashoffset:100;
-			}to{
-				stroke-dashoffset:0;
+	.st0{fill:none;stroke:#133251;stroke-linecap:round;stroke-miterlimit:10;}
+	.st1{fill:#FFFFFF;stroke:#41210D;stroke-width:0.1;stroke-miterlimit:10;}
+	
+	<defs>
+		<style>
+			#Layer_2:hover .st0 {
+			-webkit-animation: stroke 5s ease-in-out forwards;
+			-o-animation: stroke 5s ease-in-out forwards;
+			-moz-animation: stroke 5s ease-in-out forwards;
+			animation: stroke 5s ease-in-out forwards;
+			stroke-dasharray: 200;
+			stroke-dashoffset: 0;
 			}
-		}
-		@-moz-keyframes dash{
-			from{
-				stroke-dashoffset:100;
-			}to{
-				stroke-dashoffset:0;
+			
+			@-webkit-keyframes stroke {
+			  0% { stroke-dashoffset:  200 }
+			  100% { stroke-dashoffset: 0 }
 			}
-		}
-	</style>
-</defs>
+			@-moz-keyframes stroke {
+			  0% { stroke-dashoffset:  200 } 
+			  100% { stroke-dashoffset: 0 }
+			}
+		</style>
+	</defs>
+	
 </style>
-<g id="XMLID_1_">
-	<path class="st0" d="M-257,397.1c23.8,0,47.6,0,71.3,0"/>
+<g id="XMLID_3_">
+	<path class="st0" d="M-257,399.3c26.5,0,53,0,79.4,0c0.3,0.2,4.4,2.9,4.4,7.9c0,5.1-4.1,7.8-4.3,8c-21.3,0-42.5,0-63.8,0"/>
 </g>
+<rect x="-249.8" y="398.9" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 -708.1656 505.2742)" class="st1" width="0.8" height="0.8"/>
+<rect x="-233.8" y="398.9" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 -680.8615 516.597)" class="st1" width="0.8" height="0.8"/>
+<rect x="-217.8" y="398.9" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 -653.5424 527.9049)" class="st1" width="0.8" height="0.8"/>
+<rect x="-202" y="398.9" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 -626.5363 539.0813)" class="st1" width="0.8" height="0.8"/>
+<rect x="-186" y="398.9" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 -599.1768 550.4319)" class="st1" width="0.8" height="0.8"/>
+<rect x="-186" y="414.8" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 -610.4017 577.5273)" class="st1" width="0.8" height="0.8"/>
+<rect x="-202" y="414.9" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 -637.8409 566.373)" class="st1" width="0.8" height="0.8"/>
+<rect x="-217.8" y="414.9" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 -664.8427 555.1863)" class="st1" width="0.8" height="0.8"/>
+<rect x="-233.8" y="414.8" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 -692.1235 543.7828)" class="st1" width="0.8" height="0.8"/>
 </svg>
