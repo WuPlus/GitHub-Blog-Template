@@ -45,6 +45,7 @@ var view = {
     initializeKeyBoard: function() {
         var container = $('#main-container');
         var card = $('.card');
+        var timeline = $('.timelinest');
 
         $(document).on('keydown', function(e) {
             var x = e.which || e.keyCode;
@@ -93,6 +94,13 @@ var view = {
                             if (card.hasClass('flip')) {
                                 card.removeClass('flip');
                             }
+                            timeline.load('../images/draw.svg', function(response) {
+                                $(this).addClass("svgLoaded");
+                                if (!response) {
+                                    // 加载失败的处理代码
+                                    console.log('error');
+                                }
+                            });
                         }
                     });
                     break;
