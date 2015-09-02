@@ -306,3 +306,124 @@ a .fa-facebook {
 	font-size: 25px;
 	color: black;
 }
+/*svg*/
+.svg-wrap {
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+}
+
+/*horizontal nav*/
+nav a{
+	position:absolute;
+	display:block;
+	z-index: 1000;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	}
+nav a.horizontal{
+	top:50%;
+	width: 62px;
+	border-radius: 15px;
+	}
+nav a.vertical{
+	left:49%;
+	width: 13px;
+	height: 30px;
+	border-radius: 10px;
+	}
+nav a.nav-left{
+	left:0;
+	}
+nav a.nav-right{
+	right:0;
+	}
+nav a.nav-top{
+	top:35px;
+	}
+nav a.nav-down{
+	bottom: -15px;
+	}
+nav a svg {
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+}
+.nav-roundcircle a{
+	margin: 0 20px;
+	padding: 10px;
+	height: 18px;
+	background: #444d51;
+	-webkit-transition: width 0.3s, background-color 0.3s;
+	transition: width 0.3s, background-color 0.3s;
+	}
+.nav-roundcircle .icon-wrap {
+	position: absolute;
+	width: 32px;
+}
+
+.nav-roundcircle a.nav-left .icon-wrap {
+	left: 15px;
+	top:3px;
+}
+.nav-roundcircle a.nav-top .icon-wrap {
+	top:3px;
+}
+
+.vertical .icon-wrap {
+	left: -3px;
+}
+
+.nav-roundcircle a.nav-right .icon-wrap {
+	right: 15px;
+	top:3px;
+}
+
+.nav-roundcircle svg.icon {
+	fill: #2e2f34;
+}
+.nav-roundcircle h3 {
+	position: absolute;
+	top: -10px;
+	margin: 0;
+	color: #2e2f34;
+	text-transform: uppercase;
+	white-space: nowrap;
+	letter-spacing: 1px;
+	font-weight: 400;
+	font-size: 0.85em;
+	line-height: 4.45;
+	opacity: 0;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+}
+
+.nav-roundcircle a.nav-gen h3 {
+	right: 20px;
+	-webkit-transform: translateX(100%);
+	transform: translateX(100%);
+}
+
+.nav-roundcircle a.nav-right h3 {
+	left: 20px;
+	-webkit-transform: translateX(-100%);
+	transform: translateX(-100%);
+}
+
+.horizontal:hover {
+	width: 150px;
+	background: #fff;
+}
+.vertical:hover{
+	width: 100px;
+	background: #fff;
+	}
+
+.nav-roundcircle a:hover h3 {
+	opacity: 1;
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+}

@@ -3,6 +3,24 @@
 	{% include head.html %}
 	
 	<body>
+    	<div class="svg-wrap">
+        	<svg width="64" height="64" viewBox="0 0 64 64">
+				<path id="arrow-left" d="M15.946 48l0.003-10.33 47.411 0.003v-11.37h-47.414l0.003-10.304-15.309 16z" />
+			</svg>
+			<svg width="64" height="64" viewBox="0 0 64 64">
+				<path id="arrow-right" d="M48.058 48l-0.003-10.33-47.414 0.003v-11.37h47.418l-0.003-10.304 15.306 16z" />
+			</svg>
+            <svg width="64" height="64" viewBox="0 0 64 64">
+            <path id="arrow-up" d="M54.2,1C50,5.3,45.7,9.5,41.4,13.8c-4.3,4.3-8.5,8.7-12.8,12.7c5.4,0,9.9,0,15.9,0c0,24,0,47.4,0,71
+
+	c6,0,12,0,19,0c0-23.6,0-47,0-71c5,0,9.5,0,14.7,0L54.2,1z"/>
+			</svg>
+            <svg width="64" height="64" viewBox="0 0 64 64">
+            <path id="arrow-down" d="M54.2,97.3C50,93,45.7,88.6,41.4,84.3c-4.3-4.3-8.5-8.8-12.8-12.8c5.4,0,9.9,0,15.9,0c0-24,0-47,0-71
+
+	c6,0,12,0,19,0c0,24,0,47,0,71c5,0,9.5,0,14.7,0L54.2,97.3z"/>
+			</svg>
+        </div>
 		<div class="container" id="main-container">
 			<div class="matrix-row">
 				<div class="matrix-col"></div>
@@ -20,11 +38,29 @@
 						<img src="/images/center-bg.svg">
 					</div>
 					<div class="center-title">
-						<div class="title">LEO HAN</div>
+						<div class="title">BLOG</div>
 						<div class="sub-title">
-							A UXer & Product Hunter
+							Amazing things are happening here
 						</div>
 					</div>
+                    <nav class="nav-roundcircle">
+                    	<a class="nav-gen nav-left horizontal" href="">
+                        	<span class="icon-wrap"><svg class="icon" width="32" height="32" viewBox="0 0 64 64"><use xlink:href="#arrow-left"></svg></span>
+							<h3>Contact</h3>
+                        </a>
+                        <a class="nav-right horizontal" href="">
+                        	<span class="icon-wrap"><svg class="icon" width="32" height="32" viewBox="0 0 64 64"><use xlink:href="#arrow-right"></svg></span>
+							<h3>About Me</h3>
+                        </a>
+                        <a class="nav-top nav-gen vertical" href="">
+                        	<span class="icon-wrap"><svg class="icon" width="26" height="32" viewBox="0 0 83 83"><use xlink:href="#arrow-up"></svg></span>
+							<h3>Blog</h3>
+                        </a>
+                        <a class="nav-down nav-gen vertical" href="">
+                        	<span class="icon-wrap"><svg class="icon" width="26" height="32" viewBox="0 0 83 83"><use xlink:href="#arrow-down"></svg></span>
+							<h3>Porject</h3>
+                        </a>
+                    </nav>
 				</div>
 				<div class="matrix-col bg-dark-blue">
 					{% include about.html %}
