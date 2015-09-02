@@ -19,7 +19,17 @@
 .timeline{
 	text-align:left;
 	color:#FFFFFF;
+	margin-top:15px;
+	position:relative;
 	}
 .timeline p{
 	font-weight:300;
+	margin-top:5px;
+	padding-right:15px;
+	}
+.timeline h3{
+	margin-bottom:5px;
+	}
+.t-content{
+	top:100%;
 	}
