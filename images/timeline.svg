@@ -6,7 +6,7 @@
 	
 	<defs>
 		<style>
-			.svgLoaded {
+			.st0 {
 			-webkit-animation: stroke 5s ease-in-out forwards;
 			-o-animation: stroke 5s ease-in-out forwards;
 			-moz-animation: stroke 5s ease-in-out forwards;
