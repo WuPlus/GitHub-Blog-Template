@@ -71,6 +71,10 @@ var view = {
                             if (!card.hasClass('flip')) {
                                 card.addClass('flip');
                             }
+                            if(timeline.hasClass('svgLoaded')){
+                                $('.svgLoaded svg').remove();
+                                timeline.removeClass('svgLoaded');
+                            }
                         },
                     });
                     break;
@@ -94,8 +98,9 @@ var view = {
                             if (card.hasClass('flip')) {
                                 card.removeClass('flip');
                             }
-                            timeline.load('../images/draw.svg', function(response) {
+                            timeline.load('../images/timeline.svg', function(response) {
                                 $(this).addClass("svgLoaded");
+                                console.log(1);
                                 if (!response) {
                                     // 加载失败的处理代码
                                     console.log('error');

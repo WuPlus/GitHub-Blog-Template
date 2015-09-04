@@ -6,7 +6,7 @@
 	
 	<defs>
 		<style>
-			#Layer_1:hover .st0 {
+			.svgLoaded {
 			-webkit-animation: stroke 5s ease-in-out forwards;
 			-o-animation: stroke 5s ease-in-out forwards;
 			-moz-animation: stroke 5s ease-in-out forwards;

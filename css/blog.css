@@ -27,8 +27,13 @@
 }
 
 .single-post {
-	margin: 40px 5% 40px 5%;
+	margin: 20px 5% 20px 5%;
+	padding: 20px 0 20px 0;
 	width: 90%;
-	background-color: red;
 	height: 180px;
+	border-bottom: solid 2px;
+}
+
+.single-post-content {
+	padding: 15px 0;
 }
