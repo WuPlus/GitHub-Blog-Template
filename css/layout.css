@@ -81,9 +81,15 @@ a {
 /*component*/
 .title {
 	font-size: 60px;
-	margin: 30px 0 30px 0;
+	margin: 0 0 30px 0;
 	color: white;
 }
+
+.center-subtitle{
+	color:#fff;
+	display:inline;
+	float: left;
+	}
 
 .sub-title {
 	font-size: 24px;
@@ -271,7 +277,6 @@ a .fa-facebook {
 	-webkit-transition: -webkit-transform 4s ease-out;
 	-moz-transition: -moz-transform 4s ease-out;
 	-o-transition: -o-transform 4s ease-out;
-
 	-ms-transform:rotate(720deg) scale(10,10);
 	-moz-transform:rotate(720deg) scale(10,10); 
 	-webkit-transform:rotate(720deg) scale(10,10);
@@ -281,17 +286,97 @@ a .fa-facebook {
 
 .center-title {
 	position: relative;
-	margin-top: -120px;
-	top: 50%;
+	top: 35%;
 	text-align: center;
 }
-
+.center-content{
+	color:#fff;
+	position:relative;
+	top:35%;
+	}
 .visible{
 	float: left;
-	font-weight:600;
+	font-weight:500;
 	overflow:hidden;
 	height:40px;
+	color:#fff;
+	font-size:28px;
 	}
+.visible ul{
+	margin-top:0;
+	padding-left:190px;
+	text-align:left;
+	list-style:none;
+	animation: 6s linear 0s normal none infinite change;
+    -webkit-animation: 6s linear 0s normal none infinite change;
+    -moz-animation: 6s linear 0s normal none infinite change;
+    -o-animation: 6s linear 0s normal none infinite change;
+	}
+.visible ul li{
+	line-height:40px;
+	margin:0;
+	font-weight:500;
+	}
+
+@-webkit-keyframes change {
+   0% {
+    margin-top: -3px;
+  }
+  15% {
+    margin-top: -3px;
+  }
+  25% {
+    margin-top: -46px;
+  }
+  40% {
+    margin-top: -46px;
+  }
+  50% {
+    margin-top: -85px;
+  }
+  65% {
+    margin-top: -85px;
+  }
+  75% {
+    margin-top: -46px;
+  }
+  85% {
+    margin-top: -46px;
+  }
+  100% {
+    margin-top: -3px;
+  }
+}
+@keyframes change {
+  0% {
+    margin-top: -3px;
+  }
+  15% {
+    margin-top: -3px;
+  }
+  25% {
+    margin-top: -46px;
+  }
+  40% {
+    margin-top: -46px;
+  }
+  50% {
+    margin-top: -85px;
+  }
+  65% {
+    margin-top: -85px;
+  }
+  75% {
+    margin-top: -46px;
+  }
+  85% {
+    margin-top: -46px;
+  }
+  100% {
+    margin-top: -3px;
+  }
+}
+
 .nav i {
 	position: fixed;
 	right: 10px;
