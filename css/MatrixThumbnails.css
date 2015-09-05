@@ -13,7 +13,6 @@
 
 .thumbnail {
 	height: 100%;
-	background-color: red;
 }
 
 .matrix-thumbnails-backgd {
@@ -26,4 +25,13 @@
 	z-index: 1040;
 	background-color: #000;
 	opacity: 0.6;
+}
+
+.thumbnail-top, .thumbnail-left, .thumbnail-center, .thumbnail-right,
+.thumbnail-bottom {
+	margin: 5% 5%;
+	height: 90%;
+	width: 90%;
+	background-color: red;
+	border-radius: 3px;
 }
