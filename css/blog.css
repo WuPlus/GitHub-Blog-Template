@@ -22,18 +22,26 @@
 	margin: 10px 5px;
 }
 
-.tag-arrow {
-	
-}
-
 .single-post {
 	margin: 20px 5% 20px 5%;
 	padding: 20px 0 20px 0;
 	width: 90%;
 	height: 180px;
-	border-bottom: solid 2px;
+	border-bottom: solid 1px #cccac8;
+}
+
+.single-post-title {
+	color: #ff9900;
 }
 
 .single-post-content {
 	padding: 15px 0;
+}
+
+.readMore a{
+	color: #ff9900;
+}
+
+.single-post-tags span{
+	color: #ff9900;
 }

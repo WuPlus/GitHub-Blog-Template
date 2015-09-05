@@ -77,15 +77,15 @@ figure.effect_1 img{
 	width: calc(100% + 25px);
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: translate3d(-10px,0,0);
-	transform: translate3d(-15px,0,0);
+	-webkit-transform: translate(-10px,0);
+	transform: translate(-15px,0);
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	}
 figure.effect_1:hover img {
 	opacity: 0.3;
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
+	-webkit-transform: translate(0,0);
+	transform: translate(0,0);
 }
 figure.effect_1 figcaption{
 	text-align:left;
@@ -105,25 +105,25 @@ figure.effect_1 h2:after{
 	background: #fff;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
-	-webkit-transform: translate3d(-100%,0,0);
-	transform: translate3d(-100%,0,0);
+	-webkit-transform: translate(-100%,0);
+	transform: translate(-100%,0);
 	}
 figure.effect_1:hover h2:after{
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
+	-webkit-transform: translate(0,0);
+	transform: translate(0,0);
 	}
 figure.effect_1 p{
 	padding:1em 0;
 	opacity:0;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
-	-webkit-transform: translate3d(100%,0,0);
-	transform: translate3d(100%,0,0);
+	-webkit-transform: translate(100%,0);
+	transform: translate(100%,0);
 	}
 figure.effect_1:hover p{
 	opacity: 1;
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
+	-webkit-transform: translate(0,0);
+	transform: translate(0,0);
 	}
 	
 /*effect 2*/
@@ -136,15 +136,15 @@ figure.effect_2 img{
 	width: calc(100% + 25px);
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: translate3d(-15px,0,0);
-	transform: translate3d(-15px,0,0);
+	-webkit-transform: translate(-15px,0);
+	transform: translate(-15px,0);
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	}
 figure.effect_2:hover img {
 	opacity: 0.3;
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
+	-webkit-transform: translate(0,0);
+	transform: translate(0,0);
 	}
 figure.effect_2 figcaption{
 	text-align:left;
@@ -161,22 +161,22 @@ figure.effect_2 figcaption::before{
 	content:'';
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: translate3d(-20px,0,0);
-	transform: translate3d(-20px,0,0);
+	-webkit-transform: translate(-20px,0);
+	transform: translate(-20px,0);
 	}
 figure.effect_2 p{
 	padding:2em 0;
 	opacity:0;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
-	-webkit-transform: translate3d(-20px,0,0);
-	transform: translate3d(-20px,0,0);
+	-webkit-transform: translate(-20px,0);
+	transform: translate(-20px,0);
 	}
 figure.effect_2:hover figcaption::before,
 figure.effect_2:hover p {
 	opacity: 1;
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
+	-webkit-transform: translate(0,0);
+	transform: translate(0,0);
 	}
 	
 /*effect 3*/
@@ -236,18 +236,18 @@ figure.effect_4:hover img{
 	opacity:0.35;
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
+	-webkit-transform: translate(0,0);
+	transform: translate(0,0);
 	}
 figure.effect_4 h2{
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
-	-webkit-transform:translate3d(0,10px,0);
-	transform:translate3d(0,10px,0);
+	-webkit-transform:translate(0,10px);
+	transform:translate(0,10px);
 	}
 figure.effect_4:hover h2{
-	-webkit-transform:translate3d(0,0,0);
-	transform:translate3d(0,0,0);
+	-webkit-transform:translate(0,0);
+	transform:translate(0,0);
 	}
 figure.effect_4 h2::after{
 	position:absolute;
@@ -260,23 +260,23 @@ figure.effect_4 h2::after{
 	opacity:0;
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: translate3d(0,30px,0);
-	transform: translate3d(0,30px,0);
+	-webkit-transform: translate(0,30px);
+	transform: translate(0,30px);
 	}
 figure.effect_4 p{
 	padding:60px 0;
 	opacity:0;
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform:translate3d(0,50%,0);
-	transform:translate3d(0,50%,0);
+	-webkit-transform:translate(0,50%);
+	transform:translate(0,50%);
 	}
 figure.effect_4:hover h2{
-	-webkit-transform:translate3d(0,0,0);
-	transform:translate3d(0,0,0);
+	-webkit-transform:translate(0,0);
+	transform:translate(0,0);
 	}
 figure.effect_4:hover h2::after, figure.effect_4:hover p{
 	opacity:1;
-	-webkit-transform:translate3d(0,0,0);
-	transform:translate3d(0,0,0);
+	-webkit-transform:translate(0,0);
+	transform:translate(0,0);
 	}
