@@ -141,6 +141,22 @@ var view = {
             topButton.find('.icon').css('fill','#48a075');
         }
     },
+    initializeThumbnailButton: function() {
+        var thumbnails = $('.matrix-thumbnails');
+        var button = $('.nav a');
+        var main_container = $('#main-container');
+        var thumbnails_bg = $('.matrix-thumbnails-backgd');
+
+        button.on('click',function(){
+            thumbnails.show();
+            thumbnails_bg.show();
+        });
+
+        thumbnails.on('click',function() {
+            thumbnails.hide();
+            thumbnails_bg.hide();
+        });
+    },
     resize: function() {
         $(window).resize(function() {
             view.obtianWindowSize();
@@ -160,6 +176,7 @@ var view = {
         view.onloadAnimation();
         view.initializeNavButtons();
         //view.initializeKeyBoard();
+        view.initializeThumbnailButton();
         view.resize();
     }
 };

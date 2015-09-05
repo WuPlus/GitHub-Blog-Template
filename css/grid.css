@@ -93,6 +93,14 @@
 	margin-left: 33.3%;
 }
 
+.col-offset-1-5 {
+	margin-left: 20%;
+}
+
+.col-offset-2-5 {
+	margin-left: 40%;
+}
+
 @media screen and (min-width: 992px) and (max-width: 1200px){
 	.col-md-1-12 {
 		float:left;

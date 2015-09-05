@@ -1,0 +1,29 @@
+.matrix-thumbnails {
+	position: absolute;
+	display: none;
+	z-index: 2000;
+	width: 100%;
+	height: 80%;
+	top: 10%;
+}
+
+.matrix-thumbnails .row {
+	height: 33%;
+}
+
+.thumbnail {
+	height: 100%;
+	background-color: red;
+}
+
+.matrix-thumbnails-backgd {
+	position: absolute;
+	display: none;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1040;
+	background-color: #000;
+	opacity: 0.6;
+}
