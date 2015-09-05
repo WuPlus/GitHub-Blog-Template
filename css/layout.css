@@ -307,10 +307,10 @@ a .fa-facebook {
 	padding-left:190px;
 	text-align:left;
 	list-style:none;
-	animation: 6s linear 0s normal none infinite change;
-    -webkit-animation: 6s linear 0s normal none infinite change;
-    -moz-animation: 6s linear 0s normal none infinite change;
-    -o-animation: 6s linear 0s normal none infinite change;
+	animation: 10s linear 0s normal none infinite change;
+    -webkit-animation: 10s linear 0s normal none infinite change;
+    -moz-animation: 10s linear 0s normal none infinite change;
+    -o-animation: 10s linear 0s normal none infinite change;
 	}
 .visible ul li{
 	line-height:40px;
@@ -319,61 +319,91 @@ a .fa-facebook {
 	}
 
 @-webkit-keyframes change {
-   0% {
+  0% {
+    margin-top: -3px;
+  }
+  10% {
     margin-top: -3px;
   }
   15% {
-    margin-top: -3px;
+    margin-top: -43px;
   }
   25% {
-    margin-top: -46px;
+    margin-top: -43px;
+  }
+  30% {
+    margin-top: -83px;
   }
   40% {
-    margin-top: -46px;
+    margin-top: -83px;
   }
-  50% {
-    margin-top: -85px;
+  45% {
+    margin-top: -123px;
   }
-  65% {
-    margin-top: -85px;
+  55% {
+    margin-top: -123px;
+  }
+  60% {
+    margin-top: -83px;
+  }
+  70% {
+    margin-top: -83px;
   }
   75% {
-    margin-top: -46px;
+    margin-top: -43px;
   }
   85% {
-    margin-top: -46px;
+    margin-top: -43px;
+  }
+  90% {
+    margin-top: -3px;
   }
   100% {
-    margin-top: -3px;
+   margin-top: -3px;
   }
 }
 @keyframes change {
   0% {
     margin-top: -3px;
   }
-  15% {
+  10% {
     margin-top: -3px;
+  }
+  15% {
+    margin-top: -43px;
   }
   25% {
-    margin-top: -46px;
+    margin-top: -43px;
+  }
+  30% {
+    margin-top: -83px;
   }
   40% {
-    margin-top: -46px;
+    margin-top: -83px;
   }
-  50% {
-    margin-top: -85px;
+  45% {
+    margin-top: -123px;
   }
-  65% {
-    margin-top: -85px;
+  55% {
+    margin-top: -123px;
+  }
+  60% {
+    margin-top: -83px;
+  }
+  70% {
+    margin-top: -83px;
   }
   75% {
-    margin-top: -46px;
+    margin-top: -43px;
   }
   85% {
-    margin-top: -46px;
+    margin-top: -43px;
+  }
+  90% {
+    margin-top: -3px;
   }
   100% {
-    margin-top: -3px;
+   margin-top: -3px;
   }
 }
 
