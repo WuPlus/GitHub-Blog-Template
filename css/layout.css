@@ -1,3 +1,13 @@
+@font-face {
+   font-family: Reckoner;
+   src: url(../font/Reckoner.ttf);
+}
+@font-face {
+   font-family: Reckoner;
+   src: url(../font/Reckoner_Bold.ttf);
+   font-weight:bold;
+}
+
 html,body {
 	width: 100%;
 	height: 100%;
@@ -33,7 +43,11 @@ a {
 	background-color: #e56292;
 }
 .bg-yellow{
-	background-color: #facb33;
+	background-color: #FBD55C;
+	-webkit-box-shadow: 4px -2px 8px #CC9933;
+	box-shadow: 4px -2px 8px #CC9933;
+	border-right: 5px solid #FFFFFF;
+    border-top: 5px solid #FFFFFF;
 }
 .bg-dark-black {
 	background-color: #2e2f34;
@@ -80,32 +94,47 @@ a {
 
 /*component*/
 .title {
-	font-size: 60px;
+	font-size: 70px;
 	margin: 0 0 30px 0;
 	color: white;
+	font-family:"Reckoner Bold";
+	letter-spacing:2px;
 }
 
 .center-subtitle{
 	color:#fff;
 	display:inline;
 	float: left;
+	font-family:"Reckoner Bold";
+	font-size:40px;
 	}
 
 .sub-title {
-	font-size: 24px;
+	font-size: 30px;
 	margin: 20px 0 20px 0;
-	font-style: italic;
 	color: white;
+	font-family:Reckoner;
 }
 
-.sl-h1 {
+/*.sl-h1 {
 	font-size: 24px;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 500;
 	line-height: 23px;
 	padding: 8px 0;
+}*/
+.sl-h1 {
+	font-size: 32px;
+	font-style: normal;
+	font-variant: normal;
+	line-height: 23px;
+	padding: 8px 0;
+	font-family: Reckoner;
+	text-transform:uppercase;
+	color:#fd7045;
 }
+
 
 .sl-h2 {
 	font-size: 21px;
@@ -292,7 +321,7 @@ a .fa-facebook {
 .center-content{
 	color:#fff;
 	position:relative;
-	top:35%;
+	top:38%;
 	}
 .visible{
 	float: left;
@@ -315,21 +344,22 @@ a .fa-facebook {
 .visible ul li{
 	line-height:40px;
 	margin:0;
-	font-weight:500;
+	font-family:"Reckoner Bold";
+	font-size:40px;
 	}
 
 @-webkit-keyframes change {
   0% {
-    margin-top: -3px;
+    margin-top: 0px;
   }
   10% {
-    margin-top: -3px;
+    margin-top: 0px;
   }
   15% {
-    margin-top: -43px;
+    margin-top: -40px;
   }
   25% {
-    margin-top: -43px;
+    margin-top: -40px;
   }
   30% {
     margin-top: -83px;
@@ -364,46 +394,46 @@ a .fa-facebook {
 }
 @keyframes change {
   0% {
-    margin-top: -3px;
+    margin-top: 4px;
   }
   10% {
-    margin-top: -3px;
+    margin-top: 4px;
   }
   15% {
-    margin-top: -43px;
+    margin-top: -36px;
   }
   25% {
-    margin-top: -43px;
+    margin-top: -36px;
   }
   30% {
-    margin-top: -83px;
+    margin-top: -76px;
   }
   40% {
-    margin-top: -83px;
+    margin-top: -76px;
   }
   45% {
-    margin-top: -123px;
+    margin-top: -116px;
   }
   55% {
-    margin-top: -123px;
+    margin-top: -116px;
   }
   60% {
-    margin-top: -83px;
+    margin-top: -76px;
   }
   70% {
-    margin-top: -83px;
+    margin-top: -76px;
   }
   75% {
-    margin-top: -43px;
+    margin-top: -36px;
   }
   85% {
-    margin-top: -43px;
+    margin-top: -36px;
   }
   90% {
-    margin-top: -3px;
+    margin-top: 4px;
   }
   100% {
-   margin-top: -3px;
+   margin-top: 4px;
   }
 }
 

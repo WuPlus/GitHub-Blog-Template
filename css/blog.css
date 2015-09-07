@@ -3,7 +3,8 @@
 }
 
 .blog-title {
-	color: black;
+	color: #FD7045;
+	margin: 15px 0;
 }
 
 .tag-box {
@@ -31,7 +32,8 @@
 }
 
 .single-post-title {
-	color: #ff9900;
+	color: #FD7045;
+	font-family:Reckoner;
 }
 
 .single-post-content {
