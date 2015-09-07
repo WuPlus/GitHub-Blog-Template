@@ -349,7 +349,7 @@ a .fa-facebook {
 	}
 
 @-webkit-keyframes change {
-  0% {
+   0% {
     margin-top: 0px;
   }
   10% {
@@ -362,34 +362,34 @@ a .fa-facebook {
     margin-top: -40px;
   }
   30% {
-    margin-top: -83px;
+    margin-top: -80px;
   }
   40% {
-    margin-top: -83px;
+    margin-top: -80px;
   }
   45% {
-    margin-top: -123px;
+    margin-top: -120px;
   }
   55% {
-    margin-top: -123px;
+    margin-top: -120px;
   }
   60% {
-    margin-top: -83px;
+    margin-top: -80px;
   }
   70% {
-    margin-top: -83px;
+    margin-top: -80px;
   }
   75% {
-    margin-top: -43px;
+    margin-top: -40px;
   }
   85% {
-    margin-top: -43px;
+    margin-top: -40px;
   }
   90% {
-    margin-top: -3px;
+    margin-top: 0px;
   }
   100% {
-   margin-top: -3px;
+   margin-top: 0px;
   }
 }
 @keyframes change {
