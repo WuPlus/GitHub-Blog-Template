@@ -44,10 +44,6 @@ a {
 }
 .bg-yellow{
 	background-color: #FBD55C;
-	-webkit-box-shadow: 4px -2px 8px #CC9933;
-	box-shadow: 4px -2px 8px #CC9933;
-	border-right: 5px solid #FFFFFF;
-    border-top: 5px solid #FFFFFF;
 }
 .bg-dark-black {
 	background-color: #2e2f34;
@@ -97,15 +93,17 @@ a {
 	font-size: 70px;
 	margin: 0 0 30px 0;
 	color: white;
-	font-family:"Reckoner Bold";
+	font-family:"Reckoner";
 	letter-spacing:2px;
+	font-weight: bold;
 }
 
 .center-subtitle{
 	color:#fff;
 	display:inline;
 	float: left;
-	font-family:"Reckoner Bold";
+	font-family:"Reckoner";
+	font-weight: bold;
 	font-size:40px;
 	}
 
@@ -344,7 +342,8 @@ a .fa-facebook {
 .visible ul li{
 	line-height:40px;
 	margin:0;
-	font-family:"Reckoner Bold";
+	font-family:"Reckoner";
+	font-weight: bold;
 	font-size:40px;
 	}
 

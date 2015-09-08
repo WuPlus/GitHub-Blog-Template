@@ -32,6 +32,9 @@
 	margin: 5% 5%;
 	height: 90%;
 	width: 90%;
-	background-color: red;
 	border-radius: 3px;
+}
+
+.thumbnail-top:hover{
+	
 }

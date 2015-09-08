@@ -146,6 +146,11 @@ var view = {
         var button = $('.nav a');
         var main_container = $('#main-container');
         var thumbnails_bg = $('.matrix-thumbnails-backgd');
+        var thumbnail_top = $('.thumbnail-top');
+        var thumbnail_left = $('.thumbnail-left');
+        var thumbnail_center = $('.thumbnail-center');
+        var thumbnail_right = $('.thumbnail-right');
+        var thumbnail_bottom = $('.thumbnail-bottom');
 
         button.on('click',function(){
             thumbnails.show();
@@ -155,6 +160,41 @@ var view = {
         thumbnails.on('click',function() {
             thumbnails.hide();
             thumbnails_bg.hide();
+        });
+
+        thumbnail_top.on('click',function(e) {
+            $('.container').scrollTop(0).scrollLeft(view.width);
+            view.left = 1;
+            view.top = 0;
+            view.controlButtons();
+        });
+
+        thumbnail_left.on('click',function(e) {
+            $('.container').scrollTop(view.height).scrollLeft(0);
+            view.left = 0;
+            view.top = 1;
+            view.controlButtons();
+        });
+
+        thumbnail_center.on('click',function(e) {
+            $('.container').scrollTop(view.height).scrollLeft(view.width);
+            view.left = 1;
+            view.top = 1;
+            view.controlButtons();
+        });
+
+        thumbnail_right.on('click',function(e) {
+            $('.container').scrollTop(view.height).scrollLeft(2*view.width);
+            view.left = 2;
+            view.top = 1;
+            view.controlButtons();
+        });
+
+        thumbnail_bottom.on('click',function(e) {
+            $('.container').scrollTop(2*view.height).scrollLeft(view.width);
+            view.left = 1;
+            view.top = 2;
+            view.controlButtons();
         });
     },
     resize: function() {
