@@ -151,15 +151,26 @@ var view = {
         var thumbnail_center = $('.thumbnail-center');
         var thumbnail_right = $('.thumbnail-right');
         var thumbnail_bottom = $('.thumbnail-bottom');
+        var discard = function(){
+            thumbnail_top.removeClass('complete');
+            thumbnail_left.removeClass('complete');
+            thumbnail_right.removeClass('complete');
+            thumbnail_.removeClass('complete');
+        };
 
         button.on('click',function(){
-            thumbnails.show();
+            thumbnails.css('visibility','visible');
             thumbnails_bg.show();
+            thumbnail_top.addClass('complete');
+            thumbnail_left.addClass('complete');
+            thumbnail_right.addClass('complete');
+            thumbnail_bottom.addClass('complete');
         });
 
         thumbnails.on('click',function() {
-            thumbnails.hide();
+            thumbnails.css('visibility','hidden');
             thumbnails_bg.hide();
+            discard();
         });
 
         thumbnail_top.on('click',function(e) {
