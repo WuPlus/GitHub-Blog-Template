@@ -35,8 +35,12 @@ a {
 }
 
 .matrix-col {
-	float: left;
+	position: absolute;
+	opacity: 1;/*
+	float: left;*/
 }
+
+
 
 
 .bg-light-pink {
@@ -53,6 +57,9 @@ a {
 }
 .bg-green {
 	background-color: #48a075;
+}
+.bg-white {
+	background-color: white;
 }
 
 /*utility*/
@@ -163,154 +170,6 @@ a {
 
 
 
-.contact-title {
-	padding-top: 65px;
-}
-
-.card-list {
-	perspective: 400px;
-	margin-left: -50px;
-}
-
-.card {
-	display: block;
-	float: left;
-	width: 80px;
-	height: 80px;
-	border: solid white 4px;
-	border-radius: 10px;
-	margin: 30px;
-	color: #962f59;
-	transform-style: preserve-3d;
-	-webkit-transform-style: preserve-3d;
-	-moz-transform-style: preserve-3d;
-	-o-tranform-style: preserve-3d;
-	-ms-transform:rotate(45deg);
-	-moz-transform:rotate(45deg); 
-	-webkit-transform:rotate(45deg);
-	-o-transform:rotate(45deg);
-	transform:rotate(45deg);
-}
-
-.card:hover{
-	box-shadow: none;
-	margin-top: 32px;
-}
-
-.flip {
-	transition: transform 0.6s;
-	-webkit-transition: -webkit-transform 0.6s;
-	-moz-transition: -moz-transform 0.6s;
-	-o-transition: -o-transform 0.6s;
-	-ms-transform:rotateY(180deg) rotate(45deg);
-	-moz-transform:rotateY(180deg) rotate(45deg); 
-	-webkit-transform:rotateY(180deg) rotate(45deg);
-	-o-transform:rotateY(180deg) rotate(45deg);
-	transform: rotateY(180deg) rotate(45deg);
-}
-
-
-.card2 {
-	-webkit-transition-delay: 0.2s;
-	-moz-transition-delay: 0.2s;
-	-o-transition-delay: 0.2s;
-	transition-delay: 0.2s;
-}
-
-.card3 {
-	-webkit-transition-delay: 0.4s;
-	-moz-transition-delay: 0.4s;
-	-o-transition-delay: 0.4s;
-	transition-delay: 0.4s;
-}
-
-.card4 {
-	-webkit-transition-delay: 0.6s;
-	-moz-transition-delay: 0.6s;
-	-o-transition-delay: 0.6s;
-	transition-delay: 0.6s;
-}
-
-.card5 {
-	-webkit-transition-delay: 0.8s;
-	-moz-transition-delay: 0.8s;
-	-o-transition-delay: 0.8s;
-	transition-delay: 0.8s;
-}
-
-.card .card-front, .card .card-back {
-	position: absolute;
-	backface-visibility: hidden;
-	-webkit-backface-visibility: hidden;
-	width: 100%;
-	height: 100%;
-}
-
-.card .card-back {
-	-ms-transform:rotateY(180deg) rotate(90deg);
-	-moz-transform:rotateY(180deg) rotate(90deg); 
-	-webkit-transform:rotateY(180deg) rotate(90deg);
-	-o-transform:rotateY(180deg) rotate(90deg);
-	transform: rotateY( 180deg ) rotate(90deg);
-}
-
-
-.card a {
-	display: block;
-	width: 100%;
-	height: 100%;
-}
-
-.card i {
-	font-size: 30px;
-	color: white;
-	margin: 25px;
-	-ms-transform:rotate(-45deg);
-	-moz-transform:rotate(-45deg); 
-	-webkit-transform:rotate(-45deg);
-	-o-transform:rotate(-45deg);
-	transform:rotate(-45deg);
-}
-
-a .fa-facebook {
-	margin-left: 32px;
-}
-
-.left-top, .left-bottom, .right-top, .right-bottom {
-	width: 35%;
-	height: 35%;
-	float: left;
-}
-
-.right-top {
-	margin-left: 30%;
-}
-
-.right-bottom {
-	margin-left: 30%;
-}
-
-.center-bg {
-	position: relative;
-	width: 50px;
-	height: 50px;
-	margin: auto;
-	top: 50%;
-	margin-top: -50px;
-}
-
-.center-bg-scaled {
-	transition: transform 4s ease-out;
-	-webkit-transition: -webkit-transform 4s ease-out;
-	-moz-transition: -moz-transform 4s ease-out;
-	-o-transition: -o-transform 4s ease-out;
-	-ms-transform:rotate(720deg) scale(10,10);
-	-moz-transform:rotate(720deg) scale(10,10); 
-	-webkit-transform:rotate(720deg) scale(10,10);
-	-o-transform:rotate(720deg) scale(10,10);
-	transform: rotate(720deg) scale(10,10);
-}
-
 .center-title {
 	position: relative;
 	top: 35%;
@@ -321,6 +180,7 @@ a .fa-facebook {
 	position:relative;
 	top:38%;
 	}
+
 .visible{
 	float: left;
 	font-weight:500;

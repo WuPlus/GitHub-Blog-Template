@@ -20,86 +20,26 @@
 					</svg>
 				</div>
 				<div class="container" id="main-container">
-					<div class="matrix-row">
-						<div class="matrix-col"></div>
-						<div class="matrix-col matrix-col-top">
+					<div id="cube" class='cube'>
+						<div class="matrix-col matrix-col-top bg-white">
 							{% include blog.html %}
 						</div>
-						<div class="matrix-col"></div>
-					</div>
-					<div class="matrix-row">
-						<div class="matrix-col bg-light-pink">
+						<div class="matrix-col matrix-col-left bg-light-pink">
 							{% include contact.html %}
 						</div>
-						<div class="matrix-col bg-dark-black">
-							<div class="row center-title">
-                            	<div class="">
-									<div class="title">AMAZING TEMPLATE</div>
-								</div>
-                            </div>
-                            <div class="row center-content">
-                     			<div class="col-1-4 col-offset-2-5">
-                					<div class="visible">
-                                        <div class="center-subtitle">
-                                            here we have 
-                                        </div>
-                                        <ul>
-                                            <li style="color:#fd7045;">blog</li>
-                                            <li style="color:#48a075;">portfolio</li>
-                                            <li style="color:#2c5379;">about</li>
-                                            <li style="color:#e56292;">contact</li>
-                                        </ul>
-                                 	</div>
-                             	</div>
-                            </div>
-							<nav class="nav-roundcircle">
-								<a class="nav-gen nav-left horizontal" id='left-button'>
-									<span class="icon-wrap"><svg class="icon" width="32" height="32" viewBox="0 0 64 64"><use xlink:href="#arrow-left"></svg></span>
-									<h3>Contact</h3>
-								</a>
-								<a class="nav-right horizontal" id='right-button'>
-									<span class="icon-wrap"><svg class="icon" width="32" height="32" viewBox="0 0 64 64"><use xlink:href="#arrow-right"></svg></span>
-									<h3>About</h3>
-								</a>
-								<a class="nav-top nav-gen vertical" id='top-button'>
-									<span class="icon-wrap"><svg class="icon" width="26" height="32" viewBox="0 0 83 83"><use xlink:href="#arrow-up"></svg></span>
-									<h3>Blog</h3>
-								</a>
-								<a class="nav-down nav-gen vertical" id='bottom-button'>
-									<span class="icon-wrap"><svg class="icon" width="26" height="32" viewBox="0 0 83 83"><use xlink:href="#arrow-down"></svg></span>
-									<h3>Porject</h3>
-								</a>
-							</nav>
+						<div class="matrix-col matrix-col-front bg-dark-black">
+							{% include welcome.html%}
 						</div>
-						<div class="matrix-col bg-dark-blue">
+						<div class="matrix-col matrix-col-right bg-dark-blue">
 							{% include about.html %}
 						</div>
-						<div class="matrix-col bg-dark-black">
-							<!--<div class="center-bg">
-														<img src="/images/center-bg.svg">
-							</div>-->
-							<div class="center-title">
-								<div class="title">BLOG</div>
-								<div class="sub-title">
-									Amazing things are happening here
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="matrix-row">
-						<div class="matrix-col"></div>
-						<div class="matrix-col bg-green"><!--
+						<div class="matrix-col matrix-col-bottom bg-green"><!--
 							{% include portfolio.html %} -->
 						</div>
-						<div class="matrix-col"></div>
-					</div>
-					<div class="nav">
-						<a href="#">
-							<i class="fa fa-th"></i>
-						</a>
 					</div>
 				</div>
 				{% include thumbnails.html %}
+				{% include nav.html%}
 			</div>
 		</div>
 	</body>

@@ -10,8 +10,8 @@
 .tag-box {
 	width: -webkit-calc(100% - 60px);
 	width: calc(100% - 60px);
-	height: -webkit-calc(100% - 160px);
-	height: calc(100% - 160px);
+	height: -webkit-calc(100% - 266px);
+	height: calc(100% - 266px);
 	margin-left: -13%;
 	padding:80px 20px;
 	-webkit-box-shadow: 4px -2px 8px #CC9933;
