@@ -38,7 +38,22 @@
 	height: 100%;
 }
 .portfolio_head{
-	padding-top:30px;
+	padding-top:80px;
+	width:340px;
+	}
+.pf-title{
+	border-bottom:solid 5px #fff;
+	border-right:solid 5px #fff;
+	float:left;
+	padding:0 5px 0 10px;
+	}
+.pf-icon{
+	display:block;
+	float:left;
+	width:70px;
+	height:71px;
+	border-bottom:solid 5px #fff;
+	padding-left:10px;
 	}
 
 /* Anchor will cover the whole item by default */

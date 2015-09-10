@@ -1,6 +1,21 @@
 .contact-title {
-	padding-top: 65px;
+	padding-top:60px;
+	width:315px;
 }
+.ct-title{
+	border-top:solid 5px #fff;
+	border-right:solid 5px #fff;
+	float:left;
+	padding:10px 5px 0 20px;
+	}
+.ct-icon{
+	display:block;
+	float:left;
+	width:70px;
+	height:71px;
+	border-bottom:solid 5px #fff;
+	padding:10px 0 0 10px;
+	}
 
 .card-list {
 	perspective: 400px;
@@ -30,6 +45,8 @@
 .card:hover{
 	box-shadow: none;
 	margin-top: 32px;
+	width:77px;
+	height:77px;
 }
 
 .flip {

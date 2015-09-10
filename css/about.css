@@ -36,11 +36,13 @@
 	}
 .title-line{
 	position: relative;
-	top:-115px;}
+	top:-115px;
+	min-height:80px;
+	}
 .about-sub-title{
 	position:relative;
 	top:-100px;
-	min-height:120px;
+	min-height:100px;
 	}
 .timelinest{
 	position:relative;
