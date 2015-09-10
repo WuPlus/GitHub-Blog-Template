@@ -21,6 +21,7 @@
 	color:#FFFFFF;
 	margin-top:15px;
 	position:relative;
+	top:-100px;
 	}
 .timeline p{
 	font-weight:300;
@@ -33,3 +34,15 @@
 .t-content{
 	top:100%;
 	}
+.title-line{
+	position: relative;
+	top:-115px;}
+.about-sub-title{
+	position:relative;
+	top:-100px;
+	min-height:120px;
+	}
+.timelinest{
+	position:relative;
+	top:-100px;
+	min-height:200px;}
