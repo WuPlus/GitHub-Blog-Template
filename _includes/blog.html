@@ -8,38 +8,19 @@
 			<div class="tag">Javascript</div>
 		</div>
 	</div>
-	<div class="col-4-5">
-		<div class="blog-content">
+	<div class="col-4-5 blog-content">
+		
+		{% for post in site.posts %}
 			<section class='single-post'>
-				<div class="sl-h1 single-post-title">This is a blog Title</div>
+				<div class="sl-h1 single-post-title"><a href="{{ post.url }}">{{ post.title }}</a></div>
 				<div class='single-post-tags'>Tags: <span> Tag1 </span> <span> Tag2 </span></div>
 				<div class="single-post-content">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius-
-					mod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius-
-					mod tempor incididunt ut labore et dolore magna aliqua.
+					{{ post.content | split:"<!-- more -->" | first}}
+					{% if post.content | size > 300 %}
+						<div class="readMore"><a href="{{ post.url }}">Read More</a></div>
+					{% endif %}
 				</div>
-				<div class="readMore"><a href="">Read More</a></div>
 			</section>
-			<section class='single-post'>
-				<div class="sl-h1">This is a blog Title</div>
-				<div>Tags: <span> Tag1 </span> <span> Tag2 </span></div>
-				<div class="single-post-content">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius-
-					mod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius-
-					mod tempor incididunt ut labore et dolore magna aliqua.
-				</div>
-				<div class="readMore"><a href="">Read More</a></div>
-			</section>
-			<section class='single-post'>
-				<div class="sl-h1">This is a blog Title</div>
-				<div>Tags: <span> Tag1 </span> <span> Tag2 </span></div>
-				<div class="single-post-content">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius-
-					mod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius-
-					mod tempor incididunt ut labore et dolore magna aliqua.
-				</div>
-				<div class="readMore"><a href="">Read More</a></div>
-			</section>
-		</div>
+		{% endfor %}
 	</div>
 </div>

@@ -4,26 +4,14 @@ var view = {
     speed: 1500,
     page: 'front',
     $cube: $('#cube'),
-    leftPage: {
-        card: $('.card'),
-    },
-    rightPage: {
-
-    },
     rotatePage: {
         rotateLeft: function() {
             view.$cube.css('transform', 'translateZ(-' + view.width / 2 + "px) rotateY(90deg)");
             view.page = 'left';
-            if (!view.leftPage.card.hasClass('flip')) {
-                view.leftPage.card.addClass('flip');
-            }
         },
         rotateRight: function() {
             view.$cube.css('transform', 'translateZ(-' + view.width / 2 + "px) rotateY(-90deg)");
             view.page = 'right';
-            if (view.leftPage.card.hasClass('flip')) {
-                view.leftPage.card.removeClass('flip');
-            }
         },
         rotateTop: function() {
             view.$cube.css('transform', 'translateY(-' + Math.abs(view.width - view.height) / 2 + 'px) translateZ(-' + view.height / 2 + "px) rotateX(-90deg)");
@@ -32,9 +20,6 @@ var view = {
         rotateFront: function() {
             view.$cube.css('transform', 'translateZ(-' + view.width / 2 + "px) rotateY(0deg)");
             view.page = 'front';
-            if (view.leftPage.card.hasClass('flip')) {
-                view.leftPage.card.removeClass('flip');
-            }
         },
         rotateBottom: function() {
             view.$cube.css('transform', 'translateY(' + Math.abs(view.width - view.height) / 2 + 'px) translateZ(-' + view.height / 2 + "px) rotateX(90deg)");
@@ -59,6 +44,7 @@ var view = {
         $cubeRight.css('transform', "rotateY(90deg) translateZ(" + view.width / 2 + "px)");
         $cubeTop.css('transform', 'rotateX(90deg) translateZ(' + view.height / 2 + 'px) translateY(' + Math.abs(view.width - view.height) / 2 + 'px)');
         $cubeBottom.css('transform', 'rotateX(-90deg) translateZ(' + view.height / 2 + 'px) translateY(-' + Math.abs(view.width - view.height) / 2 + 'px)');
+        view.controlComponents();
     },
     initialize3DNavButtons: function() {
         var $topButton = $('#top-button');
@@ -72,7 +58,7 @@ var view = {
             } else {
                 view.rotatePage.rotateTop();
             }
-            view.controlButtons();
+            view.controlComponents();
         });
         $rightButton.on('click', function() {
             if (view.page === 'left') {
@@ -80,7 +66,7 @@ var view = {
             } else {
                 view.rotatePage.rotateRight();
             }
-            view.controlButtons();
+            view.controlComponents();
         });
         $bottomButton.on('click', function() {
             if (view.page === 'top') {
@@ -88,7 +74,7 @@ var view = {
             } else {
                 view.rotatePage.rotateBottom();
             }
-            view.controlButtons();
+            view.controlComponents();
         });
         $leftButton.on('click', function() {
             if (view.page === 'right') {
@@ -96,15 +82,17 @@ var view = {
             } else {
                 view.rotatePage.rotateLeft();
             }
-            view.controlButtons();
+            view.controlComponents();
         });
     },
-    controlButtons: function() {
+    controlComponents: function() {
         var topButton = $('#top-button');
         var rightButton = $('#right-button');
         var bottomButton = $('#bottom-button');
         var leftButton = $('#left-button');
-        //page 1
+        var card = $('.card');
+        var timeline = $('.timelinest');
+        //top page
         if (view.page === 'top') {
             topButton.hide();
             rightButton.hide();
@@ -113,7 +101,7 @@ var view = {
             bottomButton.find('h3').html('Home');
             bottomButton.find('.icon').css('fill', '#facb33');
         }
-        //page 2
+        //left page
         if (view.page === 'left') {
             topButton.hide();
             rightButton.show();
@@ -121,8 +109,15 @@ var view = {
             bottomButton.hide();
             rightButton.find('h3').html('Home');
             rightButton.find('.icon').css('fill', '#e56292');
+            if (!card.hasClass('flip')) {
+                card.addClass('flip');
+            }
+        } else {
+            if (card.hasClass('flip')) {
+                card.removeClass('flip');
+            }
         }
-        //page 3
+        //front page
         if (view.page === 'front') {
             topButton.show();
             rightButton.show();
@@ -145,6 +140,14 @@ var view = {
             bottomButton.hide();
             leftButton.find('h3').html('Home');
             leftButton.find('.icon').css('fill', '#2c5379');
+            timeline.load('../images/timeline.svg', function() {
+                $(this).addClass("svgLoaded");
+            });
+        } else {
+            if (timeline.hasClass('svgLoaded')) {
+                $('.svgLoaded svg').remove();
+                timeline.removeClass('svgLoaded');
+            }
         }
         //page 5
         if (view.page === 'bottom') {
@@ -170,7 +173,7 @@ var view = {
             thumbnail_top.removeClass('complete');
             thumbnail_left.removeClass('complete');
             thumbnail_right.removeClass('complete');
-            thumbnail_.removeClass('complete');
+            thumbnail_bottom.removeClass('complete');
         };
 
         button.on('click', function() {
@@ -190,27 +193,27 @@ var view = {
 
         thumbnail_top.on('click', function(e) {
             view.rotatePage.rotateTop();
-            view.controlButtons();
+            view.controlComponents();
         });
 
         thumbnail_left.on('click', function(e) {
             view.rotatePage.rotateLeft();
-            view.controlButtons();
+            view.controlComponents();
         });
 
         thumbnail_center.on('click', function(e) {
             view.rotatePage.rotateFront();
-            view.controlButtons();
+            view.controlComponents();
         });
 
         thumbnail_right.on('click', function(e) {
             view.rotatePage.rotateRight();
-            view.controlButtons();
+            view.controlComponents();
         });
 
         thumbnail_bottom.on('click', function(e) {
             view.rotatePage.rotateBottom();
-            view.controlButtons();
+            view.controlComponents();
         });
     },
     resize: function() {
@@ -230,9 +233,7 @@ var view = {
         view.obtianWindowSize();
         view.initializeDiv();
         view.onloadAnimation();
-        //view.initializeNavButtons();
         view.initialize3DNavButtons();
-        //view.initializeKeyBoard();
         view.initializeThumbnailButton();
         view.resize();
     }

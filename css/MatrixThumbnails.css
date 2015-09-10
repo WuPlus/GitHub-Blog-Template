@@ -30,7 +30,8 @@
 .thumbnail-top, .thumbnail-left, .thumbnail-center, .thumbnail-right,
 .thumbnail-bottom {
 	margin: 5% 5%;
-	height: 90%;
+	padding-top: 25%;
+	height: 65%;
 	width: 90%;
 	border-radius: 3px;
 }
