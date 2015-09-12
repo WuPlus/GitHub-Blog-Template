@@ -30,10 +30,19 @@
 .thumbnail-top, .thumbnail-left, .thumbnail-center, .thumbnail-right,
 .thumbnail-bottom {
 	margin: 5% 5%;
-	padding-top: 25%;
-	height: 65%;
+	height: 90%;
 	width: 90%;
 	border-radius: 3px;
+	position: relative;
+}
+
+.thumbnail-title {
+	position: absolute;
+	width: 100%;
+	font-size: 26px;
+  	top: 50%;
+  	margin-top: -15px;
+  	color: white;
 }
 
 .thumbnail-top{
