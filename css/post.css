@@ -1,0 +1,91 @@
+/* CSS Document */
+html,body {
+	width: 100%;
+	height: 100%;
+	margin: 10px 0;
+	padding: 0;
+	font-family: 'helvetica', sans-serif;
+}
+p{
+	line-height:24px;
+	}
+.divide{
+	padding:20px 0;
+	padding-bottom:20px;}
+
+/*component-1*/
+.component-1{
+	background-size:cover; 
+	height:450px;
+	background-repeat:no-repeat;
+	}
+.component-1-content{
+	margin-top:100px;
+	color:#fff;
+	}
+h1{
+	font-family:"Reckoner Bold";
+	font-weight:bold;
+	font-size:48px;
+	text-transform:uppercase;
+	}
+h2{
+	font-family:"Reckoner Bold";
+	font-weight:bold;
+	font-size:36px;
+	}
+	
+/*component-2*/
+.component-2{
+	min-height:250px;
+	}
+.component-2 h2{
+	margin-bottom:40px;
+	margin-top:10px;
+	}
+
+.component-2 ul{
+	list-style-type:disc;
+	padding-left:15px;
+	}
+.component-2 li{
+	margin-bottom:5px;
+	}
+.component-2-left{
+	margin-top:50px;
+	}
+.component-2-right{
+	margin-top:50px;
+	}
+
+/*component-3*/
+.component-3{
+	min-height:500px;
+	}
+.component-3 h1{
+	text-align:center;
+	}
+.component-3 h2{
+	margin-bottom:40px;
+	}
+.component-3-left{
+	margin-top:100px;
+	margin-bottom:50px;
+	}
+.component-3-right{
+	background-size:cover; 
+	height:500px;
+	background-repeat:no-repeat;
+	margin-bottom:20px;
+	margin-top:10px;
+	}
+	
+/*component-4*/
+.component-4 h1{
+	text-align:center;
+	}
+/*slider*/
+.slider{
+	position:relative;
+	max-width: 840px;
+	}
