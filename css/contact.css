@@ -63,31 +63,31 @@
 
 
 .card2 {
-	-webkit-transition-delay: 0.2s;
-	-moz-transition-delay: 0.2s;
-	-o-transition-delay: 0.2s;
-	transition-delay: 0.2s;
-}
-
-.card3 {
 	-webkit-transition-delay: 0.4s;
 	-moz-transition-delay: 0.4s;
 	-o-transition-delay: 0.4s;
 	transition-delay: 0.4s;
 }
 
-.card4 {
+.card3 {
 	-webkit-transition-delay: 0.6s;
 	-moz-transition-delay: 0.6s;
 	-o-transition-delay: 0.6s;
 	transition-delay: 0.6s;
 }
 
-.card5 {
+.card4 {
 	-webkit-transition-delay: 0.8s;
 	-moz-transition-delay: 0.8s;
 	-o-transition-delay: 0.8s;
 	transition-delay: 0.8s;
+}
+
+.card5 {
+	-webkit-transition-delay: 1.0s;
+	-moz-transition-delay: 1.0s;
+	-o-transition-delay: 1.0s;
+	transition-delay: 1.0s;
 }
 
 .card .card-front, .card .card-back {
