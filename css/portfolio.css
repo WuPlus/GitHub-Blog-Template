@@ -312,6 +312,7 @@ figure.effect_4:hover h2::after, figure.effect_4:hover p{
 
 .cs-style-4 figure img {
 	max-width: 100%;
+	height: 200px;
 	display: block;
 	position: relative;
 }
